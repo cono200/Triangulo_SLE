@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Triangulo_SLE.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Triangulo" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Ingresa la  base" />
+        <Entry Keyboard="Numeric" x:Name="Base" Placeholder="Base"></Entry>
+        <Label>Ingresa la altura</Label>
+        <Entry Keyboard="Numeric" Placeholder="altura" x:Name="Altura"></Entry>
+        <Label>Ingresa el primer lado del triangulo</Label>
+        <Entry Placeholder="primer lado"  Keyboard="Numeric" x:Name="PrimerLado"></Entry>
+        <Label>Ingresa el segundo lado</Label>
+        <Entry Placeholder="Segundo lado" Keyboard="Numeric" x:Name="SegundoLado"></Entry>
+
+
+        <Entry Placeholder="Area del triangulo" IsEnabled="False" x:Name="Resultado"></Entry>
+        <Button Text="Calcular el area " Clicked="Button_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>
