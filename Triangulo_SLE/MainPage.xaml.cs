@@ -33,46 +33,12 @@ namespace Triangulo_SLE
             //CHECANDO QUE TIPO DE TRIANGULO ES 
 
             string tipoTriangulo = "";
-            /*
-            if (basee == primerLado && basee == segundoLado)
-
-            {
-                tipoTriangulo = "El triangulo esEquilatero";
-            }
-            else if (basee != primerLado && primerLado != segundoLado)
-
-            {
-                tipoTriangulo = "El triangulo  es Escaleno";
-            }
-            else
-
-            {
-                tipoTriangulo = "El triangulo  es Isoceles";
-            }
-            */
-            /*
-            //CHENCANDO SI EL USUARIO REALMENTE PUSO VALORES DE UN TRIANGULO
-            */
-            
+        
             string dudandoTriangulo=""; //VARIABLE PARA CHECAR EL TIPO DE TRIANGULO
-            /*
-            if ((primerLado + segundoLado)< basee)
-            {
-                dudandoTriangulo = "Los valores demuestra que no es un triangulo";
-            }
-            else if ((basee + primerLado) < segundoLado)
-            {
-                dudandoTriangulo = "Los valores demuestran que no es un triangulo";
-            }
-            else
-            {
-                dudandoTriangulo = "Efectivamente si es un triangulo";
-            }
-            */
-           
+            
             
 
-
+            //CHECA SI ES UN TRIANGULO, EN CASO DE QUE SI SEA UN TRIANGULO, TE MANDA A LO OTRO SI NO, SIMPLEMENTE TE DICE QUE NEL
             if (((primerLado + segundoLado) < basee || (basee + primerLado) < segundoLado || (basee + segundoLado) < primerLado))
             {
                 dudandoTriangulo = "No es un triangulo karnal";
